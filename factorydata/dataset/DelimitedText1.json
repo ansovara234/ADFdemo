@@ -1,0 +1,80 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "pdf1",
+				"container": "pdf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CRIM",
+				"type": "String"
+			},
+			{
+				"name": "ZN",
+				"type": "String"
+			},
+			{
+				"name": "INDUS",
+				"type": "String"
+			},
+			{
+				"name": "CHAS",
+				"type": "String"
+			},
+			{
+				"name": "NOX",
+				"type": "String"
+			},
+			{
+				"name": "RM",
+				"type": "String"
+			},
+			{
+				"name": "AGE",
+				"type": "String"
+			},
+			{
+				"name": "DIS",
+				"type": "String"
+			},
+			{
+				"name": "RAD",
+				"type": "String"
+			},
+			{
+				"name": "TAX",
+				"type": "String"
+			},
+			{
+				"name": "PTRATIO",
+				"type": "String"
+			},
+			{
+				"name": "B",
+				"type": "String"
+			},
+			{
+				"name": "LSTAT",
+				"type": "String"
+			},
+			{
+				"name": "MEDV",
+				"type": "String"
+			}
+		]
+	}
+}
